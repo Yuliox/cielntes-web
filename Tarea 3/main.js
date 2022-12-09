@@ -31,7 +31,3 @@ head.addEventListener('mousemove', function(e){
    def.style.left = x + "px";
    def.style.transform = "translate(-50%)"
 })
-
-head.addEventListener('mouseout', function(e){
-   def.style.left = {style}
-})
