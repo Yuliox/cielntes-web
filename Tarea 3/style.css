@@ -10,11 +10,14 @@ body{
 
 div{
     display: grid;
-    justify-content: center;
+    justify-content: left;
+    grid-template-columns: repeat(19, 70px);
+    grid-template-rows: repeat(5, 50px);
     width: 100%;
 }
 
 header button{
+    position: absolute;
     cursor: pointer;
     height: 80px;
     width: 100px;
@@ -23,11 +26,9 @@ header button{
 
 header{
     background-color: #ffffff50;
-    display: grid;
-    justify-content: center;
     margin-left: none;
     margin-top: none;
-    height: auto;
+    height: 90px;
     width: 100%;
     border-bottom-left-radius: 35px;
     border-bottom-right-radius: 35px;
@@ -41,4 +42,14 @@ button {
     align-items: center;
     margin: 5px;
     box-shadow: 0px 5px 15px 0px #00000044;
+}
+
+body::-webkit-scrollbar {
+    background-color:#191E28;
+	width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+	background:#2F3B66;
+	border-radius: 360px;
 }
